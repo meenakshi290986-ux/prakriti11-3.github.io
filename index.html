@@ -126,19 +126,26 @@ white-space:nowrap;">
 
 <a href="https://wa.me/919958676897?text=Hi%20I%20want%20to%20order%20bookmarks"
 target="_blank"
-style="background-color: green; color: white; padding: 10px 20px; 
+style="background-color: green; color: white; padding: 5px 10px; 
 text-decoration: none; border-radius: 5px; display: inline-block; white-space: nowrap;">
 Order on WhatsApp
 </a>
 
-<br><br>
-      
-  <script>
+<br><br> 
+  <script> 
+      function scrollLeftFunc() {
+  document.getElementById("products").scrollBy({
+    left: -200,
+    behavior: 'smooth'
+  });
+}
 
-    function order() {
-
-      alert("Thank you for your order! Please contact me on WhatsApp to confirm 💕");
-
+function scrollRightFunc() {
+  document.getElementById("products").scrollBy({
+    left: 200,
+    behavior: 'smooth'
+  });
+    
     }
   </script>
 
